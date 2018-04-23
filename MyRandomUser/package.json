@@ -1,0 +1,15 @@
+{
+  "name": "myrandomuser",
+  "version": "1.0.0",
+  "description": "Random User Generator REST API geschreven in Node.js",
+  "main": "myrandomuser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Glerum",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
+  }
+}
