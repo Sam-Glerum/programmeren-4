@@ -2,9 +2,11 @@
   "name": "myrandomuser",
   "version": "1.0.0",
   "description": "Random User Generator REST API geschreven in Node.js",
-  "main": "myrandomuser.js",
+  "main": "./MyRandomUser/myrandomuser.js",
   "scripts": {
+    "start": "node ./MyRandomUser/myrandomuser.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "author": "Sam Glerum",
   "license": "ISC",
