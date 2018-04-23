@@ -7,7 +7,7 @@ app.get
     response.send('Hello Avans!');
 });
 app.get('/about', function(request, response) {
-    response.send('Written by Sam');
+    response.send(JSON.stringify('Written by Sam'));
 });
 app.post('/', function(request, response) {
     response.send('Hello Avans, POST request received!');
