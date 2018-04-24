@@ -9,6 +9,7 @@ server.all('*', (req, res, next) => {
 });
 
 server.use('/api/v1', require('./routes/routes_api_v1'));
+server.use('/api/v2', require('./routes/routes_api_v2'));
 
 server.get("/", (req, res) => {
     res.send("Hello user!");
