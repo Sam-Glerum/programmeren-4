@@ -18,6 +18,11 @@ let recipes = [
             "Mix ingredients in a bowl",
             "Chill before serving"
         ]
+    },
+    {
+        name: "Hamburger",
+        category: "Beef recipes",
+        procedure: "Steps to make a hamburger"
     }
 ];
 
