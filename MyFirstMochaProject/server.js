@@ -1,6 +1,7 @@
 let express = require('express');
 let app = express();
-let port = 8080;
+let config = require('./config');
+let port = config.webPort;
 
 
 app.get("/", (req, res) => {
