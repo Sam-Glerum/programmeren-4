@@ -1,14 +1,20 @@
 let express = require('express');
-let app = express();
+let server = express();
 let config = require('./config');
 let port = config.webPort;
 
+server.all('*', (req, res, next) => {
+    console.log(req.method + " " + req.url);
+    next();
+});
 
-app.get("/", (req, res) => {
+server.use('/api/v1', require('./routes/routes_api_v1'));
+
+server.get("/", (req, res) => {
     res.send("Hello user!");
 });
 
-app.get("/about", (req, res) => {
+server.get("/about", (req, res) => {
     res.json({
         "message": "Written by Sam",
         "author": "Sam Glerum",
@@ -16,6 +22,6 @@ app.get("/about", (req, res) => {
     });
 });
 
-app.listen(port, () => {
+server.listen(port, () => {
     console.log("Server app is listening on port " + port);
 });
